@@ -1,0 +1,45 @@
+<style>
+.mode-landscape .sl-layout { flex-direction: row; }
+.mode-portrait .sl-layout { flex-direction: column; }
+.mode-landscape .sl-content { width: 55%; }
+.mode-landscape .sl-visual { width: 45%; }
+.mode-portrait .sl-content { width: 100%; min-height: 55%; }
+.mode-portrait .sl-visual { width: 100%; flex: 1; }
+</style>
+<section class="w-full h-full overflow-auto bg-white">
+  <div class="sl-layout flex h-full">
+
+    <!-- Content column -->
+    <div class="sl-content flex flex-col justify-between p-12 bg-white">
+      <div>
+        <span class="inline-block bg-green-100 text-green-800 text-xs font-bold uppercase tracking-widest px-3 py-1 rounded-full">Challenge Tracker</span>
+      </div>
+
+      <div class="space-y-5">
+        <h1 class="text-5xl font-black text-slate-900 leading-tight">
+          Run Silent.<br/>
+          Run Far.<br/>
+          <span class="text-green-700">Forest Ghost 100.</span>
+        </h1>
+        <p class="text-lg text-slate-600 max-w-xs leading-relaxed">
+          Track every check-in, every milestone, and every step of your 100-unit challenge journey.
+        </p>
+      </div>
+
+      <div>
+        <data-attribution />
+      </div>
+    </div>
+
+    <!-- Visual column -->
+    <div class="sl-visual relative overflow-hidden">
+      <img
+        src="https://api.qb-deck.quantumbyte.ai/common/image-generation?prompt=misty%20forest%20trail%20at%20dawn%2C%20atmospheric%20fog%20between%20tall%20pine%20trees%2C%20moody%20editorial%20photography%2C%20deep%20greens%20and%20dark%20shadows%2C%20cinematic%20landscape"
+        alt="Misty forest trail"
+        class="w-full h-full object-cover"
+      />
+      <div class="absolute inset-y-0 left-0 w-28 bg-gradient-to-r from-white to-transparent"></div>
+    </div>
+
+  </div>
+</section>
