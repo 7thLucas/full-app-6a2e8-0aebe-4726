@@ -1,0 +1,44 @@
+<style>
+.mode-landscape .sl-layout { flex-direction: row; }
+.mode-portrait .sl-layout { flex-direction: column; }
+.mode-landscape .sl-narrative { width: 58%; }
+.mode-landscape .sl-visual { width: 42%; }
+.mode-portrait .sl-narrative { width: 100%; }
+.mode-portrait .sl-visual { display: none; }
+</style>
+<section class="w-full h-full overflow-auto bg-white">
+  <div class="sl-layout flex h-full">
+
+    <!-- Narrative column -->
+    <div class="sl-narrative flex flex-col justify-center p-12 space-y-8">
+      <h2 class="text-3xl font-black text-slate-900 leading-snug">The Challenge Behind the Challenge</h2>
+
+      <!-- Problem -->
+      <div class="border-l-4 border-red-400 pl-6 space-y-2">
+        <p class="text-xs font-black uppercase tracking-widest text-red-500">The Problem</p>
+        <p class="text-slate-700 text-sm leading-relaxed">
+          Long-form challenges demand consistency across days or weeks — but without a dedicated tracker, progress is invisible. Check-ins go unrecorded, milestones pass uncelebrated, and participants lose momentum and drop out.
+        </p>
+      </div>
+
+      <!-- Solution -->
+      <div class="border-l-4 border-green-600 pl-6 space-y-2">
+        <p class="text-xs font-black uppercase tracking-widest text-green-700">The Solution</p>
+        <p class="text-slate-700 text-sm leading-relaxed">
+          Forest Ghost 100 is a focused companion app that logs every session, celebrates every milestone, and keeps the community visible — turning a solitary grind into a shared journey from 0 to 100.
+        </p>
+      </div>
+    </div>
+
+    <!-- Visual column -->
+    <div class="sl-visual relative overflow-hidden">
+      <img
+        src="https://api.qb-deck.quantumbyte.ai/common/image-generation?prompt=lone%20trail%20runner%20on%20misty%20forest%20path%2C%20determination%2C%20moody%20cinematic%20lighting%2C%20deep%20greens%2C%20atmospheric%20fog%2C%20editorial%20photography"
+        alt="Lone forest runner"
+        class="w-full h-full object-cover"
+      />
+      <div class="absolute inset-y-0 left-0 w-20 bg-gradient-to-r from-white to-transparent"></div>
+    </div>
+
+  </div>
+</section>
